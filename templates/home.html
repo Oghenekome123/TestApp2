@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title%} 
+HomePage 
+{% endblock %} 
+
+   {% block content%}
+    This is the homepage
+    {%for item in items%}
+    <p>{{item.name}}</p>
+    <p>{{item.price}}</p>
+    <p>{{item.desc}}</p>
+
+    {% endfor %}
+
+
+
+
+    {% endblock%}
